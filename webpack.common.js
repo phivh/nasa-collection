@@ -1,10 +1,10 @@
 const path = require('path');
 
 const config = {
+    entry: "./src/index.js",
     resolve: {
         extensions: ['*', '.js', '.scss', '.jsx', '.json']
     },
-    entry: path.resolve(__dirname, 'src/index'),
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'build'),
