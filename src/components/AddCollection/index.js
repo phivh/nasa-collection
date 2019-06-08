@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import fontawesome from '@fortawesome/fontawesome'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faCheck, faChevronDown, faTimes} from '@fortawesome/fontawesome-free-solid'
-import '../../scss/components/modal.scss';
+//import '../../scss/components/modal.scss';
 
 fontawesome
     .library

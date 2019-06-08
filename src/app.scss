@@ -1,0 +1,42 @@
+
+@import './scss/components/header';
+@import './scss/components/list';
+@import './scss/components/item';
+@import './scss/components/modal';
+@import './scss/pages/search';
+@import './scss/pages/detail';
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap-container {
+    width: 100%;
+    padding: 30px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    h3 {
+        margin-right: 15px;
+    }
+    select {
+        height: 30px;
+        min-width: 100px;
+        border:1px solid #ccc;
+    } 
+}

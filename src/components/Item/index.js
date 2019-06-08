@@ -5,7 +5,7 @@ import Moment from 'react-moment';
 import fontawesome from '@fortawesome/fontawesome'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faHeart, faTrash, faEdit, faPlus, faPlay} from '@fortawesome/fontawesome-free-solid'
-import '../../scss/components/item.scss';
+//import '../../scss/components/item.scss';
 fontawesome
     .library
     .add(faHeart, faTrash, faEdit, faPlus, faPlay);

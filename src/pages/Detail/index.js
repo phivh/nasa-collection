@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import fontawesome from '@fortawesome/fontawesome'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faTimes} from '@fortawesome/fontawesome-free-solid'
-import '../../scss/pages/detail.scss'
+//import '../../scss/pages/detail.scss'
 
 fontawesome
     .library

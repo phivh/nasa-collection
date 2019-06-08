@@ -1,5 +1,4 @@
 import {connect} from 'react-redux';
-import {withRouter} from 'react-router-dom'
 import {fetch} from '../actions/fetch';
 import PaginationHelper from '../model/paginationHelper';
 import Home from '../pages/Home'

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Item from '../Item';
-import '../../scss/components/list.scss';
+//import '../../scss/components/list.scss';
 
 class List extends Component {
     sliceDesc(string) {
