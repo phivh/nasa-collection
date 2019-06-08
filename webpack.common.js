@@ -28,7 +28,7 @@ const config = {
                 ]
             }, {
                 test: /\.scss$/,
-                include: /src/,
+                include: path.join(__dirname, 'src'),
                 use: ['style-loader', 'css-loader', 'resolve-url-loader', 'sass-loader']
             }, {
                 test: /.*\.(gif|png|jpe?g|svg)$/i,
