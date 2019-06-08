@@ -27,10 +27,38 @@ const config = {
                     }
                 ]
             }, {
+                test: /\.css$/,
+                use: [
+                  { loader: 'style-loader' },
+                  {
+                    loader: 'css-loader',
+                    options: {
+                      modules: true,
+                      importLoaders: true,
+                      sourceMap: true,
+                      localIdentName: '[local]',
+                    }
+                  }
+                ]
+              },
+              {
                 test: /\.scss$/,
-                include: path.join(__dirname, 'src'),
-                use: ['style-loader', 'css-loader', 'resolve-url-loader', 'sass-loader']
-            }, {
+                use: [
+                  { loader: 'style-loader' },
+                  {
+                    loader: 'css-loader',
+                    options: {
+                      modules: true,
+                      import: true,
+                      localIdentName: '[local]',
+                      importLoaders: true,
+                    }
+                  },{
+                    loader: 'resolve-url-loader'
+                  },
+                  { loader: 'sass-loader' }
+                ]
+              }, {
                 test: /.*\.(gif|png|jpe?g|svg)$/i,
                 use: [
                     {
