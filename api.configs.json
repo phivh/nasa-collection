@@ -1,0 +1,5 @@
+{
+    "baseUrl": "https://images-api.nasa.gov",
+    "version": "v1",
+    "folder": "public"
+}

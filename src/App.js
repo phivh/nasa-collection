@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, lazy, Suspense } from 'react';
+import { Route } from 'react-router-dom';
+//import HomeContainer from './containers/homeContainer'
+import './scss/app.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const HomeContainer = lazy(() => import('./containers/homeContainer'));
+const SearchContainer = lazy(() => import('./containers/searchContainer'));
+const DetailContainer = lazy(() => import('./containers/detailContainer'));
+const ModalContainer = lazy(() => import('./containers/modalContainer'));
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Suspense fallback={<div>loading...</div>}>
+          <Route path="/edit/:id" render={(props) => <ModalContainer {...props} />} />
+          <Route path="/add/:id" render={(props) => <ModalContainer {...props} />} />
+          <Route path="/search" render={(props) => <SearchContainer {...props} />} />
+          <Route path="/detail/:id" render={(props) => <DetailContainer {...props} />} />
+          <Route path="/" render={(props) => <HomeContainer {...props} />} />
+        </Suspense>
+      </div>
+    );
+  }
 }
 
 export default App;
