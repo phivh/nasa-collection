@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import BackButton from '../../components/BackButton'
 import List from '../../components/List'
-import '/scss/pages/search.scss'
+import '../../scss/pages/search.scss'
 
 class Search extends Component {
     constructor(props) {
