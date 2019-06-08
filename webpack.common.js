@@ -2,7 +2,7 @@ const path = require('path');
 
 const config = {
     resolve: {
-        extensions: ['*', '.js', '.jsx', '.json']
+        extensions: ['*', '.js', 'scss', '.jsx', '.json']
     },
     entry: path.resolve(__dirname, 'src/index'),
     output: {
