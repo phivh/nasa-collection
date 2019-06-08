@@ -36,7 +36,6 @@ class Search extends Component {
         this.setState({ search: search });
     }
     render() {
-        const ref = "search"
         const {data, history, pagination} = this.props
         return (
             <section ref={(c) => this.search = c} className="search-page">

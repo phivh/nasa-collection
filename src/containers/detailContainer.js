@@ -11,7 +11,7 @@ const getSelectedItem = createSelector([getItem], (item, props) => item)
 
 const mapStateToProps = (state, props) => {
     let data;
-    if(state.router.location.pathname.indexOf('search') > -1) {
+    if(state.pagination.hits > 0) {
         data = state.data
     } else {
         data = state.local
