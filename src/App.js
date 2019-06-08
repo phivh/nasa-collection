@@ -1,13 +1,7 @@
 import React, { Component, lazy, Suspense } from 'react';
 import { Route } from 'react-router-dom';
 //import HomeContainer from './containers/homeContainer'
-import './app.scss';
-import './scss/components/_header.scss';
-import './scss/components/_item.scss';
-import './scss/components/_list.scss';
-import './scss/components/_modal.scss';
-import './scss/pages/_detail.scss';
-import './scss/pages/_search.scss';
+import './App.scss';
 
 const HomeContainer = lazy(() => import('./containers/homeContainer'));
 const SearchContainer = lazy(() => import('./containers/searchContainer'));
