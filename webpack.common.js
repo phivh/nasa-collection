@@ -28,12 +28,8 @@ const config = {
                 ]
             }, {
                 test: /\.scss$/,
-                loader: 'style!css!resolve-url!sass?sourceMap'
-              },
-              {
-                test: /\.css$/,
-                loader: "style-loader!css-loader"
-              }, {
+                use: ['style-loader', 'css-loader', 'resolve-url-loader', 'sass-loader']
+            }, {
                 test: /.*\.(gif|png|jpe?g|svg)$/i,
                 use: [
                     {
