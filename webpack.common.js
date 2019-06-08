@@ -28,6 +28,7 @@ const config = {
                 ]
             }, {
                 test: /\.scss$/,
+                include: /src/,
                 use: ['style-loader', 'css-loader', 'resolve-url-loader', 'sass-loader']
             }, {
                 test: /.*\.(gif|png|jpe?g|svg)$/i,
